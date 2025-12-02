@@ -1,0 +1,34 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+.trae/
+*.swp
+*.swo
+
+# Output files
+*_no_text.pdf
+*_no_text.pptx
+*_test_retry.pdf
+stage*.jpg
+sample*.pdf
+.temp/
+progress.json
+
+# Old test directory
+apitest/
+openapidocs/
