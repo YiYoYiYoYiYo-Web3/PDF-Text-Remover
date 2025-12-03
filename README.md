@@ -4,6 +4,10 @@ An intelligent PDF text remover that extracts text layout, generates clean backg
 
 **[中文版本 README](README_zh.md)**
 
+## Important Note
+
+⚠️ **OCR Stability Warning**: Currently, the OCR functionality (text extraction and merging) is unstable. By default, only ImageGen (background generation) is enabled. To use OCR features, please modify the environment variables in the `.env` file.
+
 ## Features
 
 ### Enhanced Workflow (PPTX Output)

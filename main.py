@@ -219,7 +219,9 @@ def main():
     
     # Check if we can resume from existing images
     original_images_dir = os.path.join(input_temp_dir, 'original_images')
-    existing_images = sorted([f for f in os.listdir(original_images_dir) if f.endswith('.png')])
+    # Use natural sorting to preserve page order (1, 2, ..., 10 instead of 1, 10, 2...)
+    existing_images = [f for f in os.listdir(original_images_dir) if f.endswith('.png')]
+    existing_images.sort(key=lambda x: int(''.join(filter(str.isdigit, x))))
     
     from PIL import Image, UnidentifiedImageError
     images = []
